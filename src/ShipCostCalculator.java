@@ -13,18 +13,18 @@ public class ShipCostCalculator
         //totalCost = shippingCost + itemPrice
         //output "The cost of shipping is “ + shippingCost + “ and the total cost is “ +  totalCost"
         //Else
-        //output "Your shipping is free"
+        //output "The total cost is " + totalCost + " and " your shipping is free"
         //endIF
 
-        int itemPrice = 90;
+        double itemPrice = 90.00;
         final double SHIPPING_RATE = .02;
-        final int FREE_SHIP_VALUE = 100;
-        double totalCost;
+        final double FREE_SHIP_VALUE = 100.00;
+        double totalCost = 0;
         double shippingCost;
 
         if (itemPrice >= FREE_SHIP_VALUE)
         {
-            System.out.println("Your shipping is free");
+            System.out.println("The total cost is " + itemPrice + " and "  + "your shipping is free");
         }
         else
        {
